@@ -2,33 +2,41 @@
 
 * {
   box-sizing: border-box;
-
-  /*base styles*/
 }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*base styles*/
+
 body {
   text-align: center;
   width: 95%;
   color: rgb(100, 99, 99);
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 0 5px;
+  padding: 0;
 }
 
 main {
   background-color: rgb(250, 250, 250);
+  text-align: center;
 }
 
 img {
   width: 95%;
 }
-ul {
+ul li {
   list-style-type: none;
   text-decoration: none;
 }
 
 a {
   color: rgb(100, 99, 99);
-  text-decoration: none;
+
   display: block;
 }
 .main-nav {
@@ -37,10 +45,7 @@ a {
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: none;
-  text-align: center;
   font-weight: 700;
-  justify-content: space-around;
-  margin: 0;
 }
 
 .button {
@@ -56,10 +61,16 @@ a {
 
 header {
   background-color: rgb(245, 245, 245);
+  text-align: center;
 }
 
 footer {
   background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+.profile {
+  padding: 5px, 10px;
 }
 
 .name {
@@ -73,32 +84,16 @@ footer {
 
 .backtotop {
   float: right;
-}
-
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.profile {
-  width: 70%;
+  text-transform: uppercase;
 }
 
 /* media queries */
 /* tablet mode */
-@media screen and (min-width: 768px) {
-  main {
-    display: flex;
+@media (min-width: 768px) {
+  body {
     max-width: 1200px;
-
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-
-  header {
-    min-height: 470px;
-    text-align: center;
+    margin: auto;
+    width: 90%;
   }
 
   .main-nav {
@@ -107,7 +102,6 @@ footer {
     padding: 0 30px;
     text-align: center;
     margin-left: 20%;
-    flex-direction: row;
   }
 
   .main-nav li {
@@ -116,31 +110,30 @@ footer {
     flex-direction: row;
   }
 
-  main section {
-    column-count: 1;
-  }
-
   .profile-img {
     float: right;
     width: 45%;
   }
 
   .profile-p {
-    float: left;
-    width: 55%;
+    width: 45%;
   }
 
-  .float-left {
+  .project {
     float: left;
-    width: 384px;
-    padding: 5px 2px 5px 10px;
-    height: 470px;
+    width: 45%;
+    padding: 5px, 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 80%;
   }
 
-  .float-right {
-    float: right;
-    width: 384, px;
-    padding: 5px 10px 5px 2px;
-    height: 470px;
+  .project {
+    float: left;
+    width: 30%;
+    padding: 5px, 0;
   }
 }
