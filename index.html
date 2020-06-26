@@ -5,9 +5,11 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
+    <title>Mobile-First</title>
   </head>
   <body class="clearfix">
+    <!-- header starts here -->
+
     <header class="clearfix">
       <nav>
         <h1 class="name">Tara Isom</h1>
@@ -17,6 +19,11 @@
           <li><a href="#contact" class="button">Contact</a></li>
         </ul>
       </nav>
+    </header>
+
+    <!-- introduction -->
+
+    <main class="clearfix">
       <section class="profile">
         <div class="profile-img">
           <img src="images/profile.png" alt="Profile photo" />
@@ -29,69 +36,71 @@
           </p>
         </div>
       </section>
-    </header>
-    <main class="clearfix">
+
+      <!-- projects-->
+
       <h3 id="portfolio">Portfolio</h3>
+      <div class="container clearfix">
+        <div class="col box-1">
+          <img src="images/portfolio-1.png" />
 
-      <div class="project">
-        <img src="images/portfolio-1.png" />
+          <h2>Marketing Page</h2>
+          <p>
+            This project shows the front page of a marketing website meant for a
+            specific business I'm interestd in.
+          </p>
+        </div>
+        <div class="col box-2">
+          <img src="images/portfolio-2.png" />
 
-        <h2>Marketing Page</h2>
-        <p>
-          This project shows the front page of a marketing website meant for a
-          specific business I'm interestd in.
-        </p>
+          <h2>Search Page</h2>
+          <p>
+            This project searches through a specific database to find
+            information that the user is trying to look up.
+          </p>
+        </div>
+
+        <div class="col box-3">
+          <img src="images/portfolio-3.png" />
+
+          <h2>Travel App</h2>
+          <p>
+            This project compares travel times based on different transportation
+            methods and tells you the best one.
+          </p>
+        </div>
+        <div class="col box-4">
+          <img src="images/portfolio-4.png" />
+
+          <h2>Map of Favorite Spots</h2>
+          <p>
+            This projet uses mapping apis to plot points for my favorite spots
+            in the city for a do-it-yourself walking tour.
+          </p>
+        </div>
+
+        <div class="col box-5">
+          <img src="images/portfolio-5.png" alt="Photo gallery project" />
+          <h2>Photo Gallery</h2>
+          <p>
+            This project shows pictures from a recent trip to the viewer and
+            allows them to easily navigate through photos.
+          </p>
+        </div>
+
+        <div class="col box-6">
+          <img src="images/portfolio-6.png" alt="Calculator project" />
+          <h2>Calculator</h2>
+          <p>
+            Someone can enter in the numbers they want, and press the big blue
+            button and get the result.
+          </p>
+        </div>
       </div>
-      <div class="project">
-        <img src="images/portfolio-2.png" />
 
-        <h2>Search Page</h2>
-        <p>
-          This project searches through a specific database to find information
-          that the user is trying to look up.
-        </p>
-      </div>
+      <!-- contact section -->
 
-      <div class="project">
-        <img src="images/portfolio-3.png" />
-
-        <h2>Travel App</h2>
-        <p>
-          This project compares travel times based on different transportation
-          methods and tells you the best one.
-        </p>
-      </div>
-      <div class="project">
-        <img src="images/portfolio-4.png" />
-
-        <h2>Map of Favorite Spots</h2>
-        <p>
-          This projet uses mapping apis to plot points for my favorite spots in
-          the city for a do-it-yourself walking tour.
-        </p>
-      </div>
-
-      <div class="project">
-        <img src="images/portfolio-5.png" alt="Photo gallery project" />
-        <h2>Photo Gallery</h2>
-        <p>
-          This project shows pictures from a recent trip to the viewer and
-          allows them to easily navigate through photos.
-        </p>
-      </div>
-
-      <div class="project">
-        <img src="images/portfolio-6.png" alt="Calculator project" />
-        <h2>Calculator</h2>
-        <p>
-          Someone can enter in the numbers they want, and press the big blue
-          button and get the result.
-        </p>
-      </div>
-    </main>
-
-    <footer>
-      <h3 id="contact">Contact</h3>
+      <h3 id="contact" class="contact">Contact</h3>
       <p>
         If you're interested in chatting or want more information about what
         I've been working on, I'd love to hear from you!
@@ -99,8 +108,18 @@
       <p>Phone +1(254)978-2668</p>
       <p>Email qaraisom@gmail.com</p>
       <br />
-      <h3 class="bottom-name">Tara Isom</h3>
-      <a href="#top" class="backtotop">Back to top</a>
+    </main>
+
+    <!--footer starts here -->
+
+    <footer class="clearfix">
+      <h2 class="bottom-name">Tara Isom</h2>
+      <ul class="footer-nav">
+        <li class="top"><a href="#top">back to top</a></li>
+        <li class="full"><a href="#top">home</a></li>
+        <li class="full"><a href="#portfolio">portfolio</a></li>
+        <li class="full"><a href="#contact">contact</a></li>
+      </ul>
     </footer>
   </body>
 </html>
