@@ -145,6 +145,7 @@ footer {
 .skills-p {
   font-family: "Handlee", cursive;
   font-size: 20px;
+  margin-left: 10px;
 }
 .contact {
   float: none;
