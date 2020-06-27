@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Notable&family=Roboto:wght@500&family=Yellowtail&display=swap");
+
+/* font-families:
+
+font-family: 'Notable', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Yellowtail', cursive;
+font-family: 'Handlee', cursive;
+
+*/
 
 * {
   box-sizing: border-box;
@@ -38,12 +47,14 @@ main {
   display: block;
   margin: 20px 10px;
   max-width: 100%;
-  height: 400px;
-  height: auto;
   color: rgb(19, 18, 18);
   text-align: center;
   letter-spacing: 1px;
   padding-top: 5px;
+}
+
+.col p {
+  font-family: "Handlee", cursive;
 }
 
 img {
@@ -64,20 +75,25 @@ a {
 .main-nav {
   width: 100%;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+
   list-style-type: none;
   font-weight: 700;
 }
 .button {
   padding: 10px 2px;
-  background: white;
-  border: 2px rgb(240, 237, 237);
+  background: rgb(27, 128, 158);
+  border: 2px outset rgb(221, 192, 64);
   cursor: default;
   margin: 10px;
+  color: whitesmoke;
 }
 
 .button:active {
-  border-style: inset;
+  border: 2px inset rgb(146, 96, 238);
+}
+
+.button:hover {
+  border: 2px inset rgb(95, 241, 168);
 }
 
 header {
@@ -99,15 +115,18 @@ footer {
   padding: 25px;
   display: block;
   background-color: rgb(243, 243, 243);
+  font-family: "Handlee", cursive;
+  font-size: 25px;
 }
 
 .name {
-  font-family: arial;
+  font-family: "Notable", sans-serif;
   margin-top: 20px;
   padding: 10px;
 }
 
 .bottom-name {
+  font-family: "Notable", sans-serif;
   float: left;
 }
 ​ .footer-nav {
@@ -122,9 +141,20 @@ footer {
 .full {
   display: none;
 }
+
+.skills-p {
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+}
 .contact {
   float: none;
   background-color: rgb(243, 243, 243);
+}
+
+.contact-p {
+  font-family: "Handlee", cursive;
+  font-size: 20px;
+  padding-left: 18px;
 }
 
 footer ul {
@@ -146,24 +176,39 @@ footer ul {
 
   .button {
     background-color: rgb(243, 243, 243);
+    color: rgb(6, 70, 87);
+    border: none;
+  }
+
+  .button:active {
+    border: none;
+  }
+
+  .button:hover {
+    border: none;
   }
 
   .profile-img {
     float: right;
     width: calc(50% - 20px);
+    margin-top: 20px;
   }
 
   .profile-p {
     width: calc(50% - 20px);
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .profile {
     padding: 30px;
+    font-size: 25px;
   }
 
   .col {
     float: left;
     width: calc(50% - 20px);
+    height: calc(33.333% - 25px);
     margin-bottom: 0;
   }
 
@@ -180,7 +225,7 @@ footer ul {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   body {
     width: 80%;
   }
@@ -190,12 +235,13 @@ footer ul {
   }
 
   .main-nav {
-    width: 35%;
+    width: 40%;
     float: right;
   }
 
   .profile {
     padding: 40px;
+    font-size: 30px;
   }
 
   .name {
@@ -205,6 +251,7 @@ footer ul {
   }
 
   .col {
-    width: calc(33.333% - 20px);
+    width: calc(33.333% - 30px);
+    height: calc(50% - 20px);
   }
 }
