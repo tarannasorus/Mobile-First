@@ -28,8 +28,7 @@ body {
   color: rgb(17, 17, 17);
   background-color: rgb(243, 243, 243);
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  margin-left: 20px;
+  margin: 0 auto;
 }
 
 main {
@@ -64,6 +63,7 @@ img {
 ul {
   list-style-type: none;
   line-height: 1.6em;
+  padding: 0;
 }
 
 a {
@@ -130,16 +130,12 @@ footer {
 .bottom-name {
   font-family: "Notable", sans-serif;
   float: left;
+  font-size: 15px;
 }
-​ .footer-nav {
+
+.footer-nav {
   text-align: right;
 }
-
-​ .top,
-.footer-nav li:last-child {
-  margin-right: 0;
-}
-
 .full {
   display: none;
 }
@@ -149,6 +145,7 @@ footer {
   font-size: 20px;
   margin: 5px 10px;
 }
+
 .contact {
   float: none;
   background-color: rgb(243, 243, 243);
@@ -212,16 +209,20 @@ footer ul {
     float: left;
     width: calc(50% - 10px);
     min-height: 400px;
-
     margin-bottom: 0;
   }
 
   .top {
     display: none;
   }
+
   .full {
     display: inline-block;
     margin-right: 0;
+  }
+
+  .bottom-name {
+    font-size: 20px;
   }
 
   footer li {
