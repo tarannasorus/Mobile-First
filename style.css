@@ -46,7 +46,7 @@ main {
 
 .col {
   display: block;
-  margin: 20px 10px;
+  margin: 20px, 20px;
   max-width: 100%;
   color: rgb(19, 18, 18);
   text-align: center;
@@ -210,8 +210,8 @@ footer ul {
 
   .col {
     float: left;
-    width: calc(50% - 20px);
-    height: calc(33.333% - 25px);
+    width: calc(50% - 10px);
+    height: calc(33.333% - 10px);
     margin-bottom: 0;
   }
 
@@ -254,7 +254,7 @@ footer ul {
   }
 
   .col {
-    width: calc(33.333% - 30px);
-    height: calc(50% - 20px);
+    width: calc(33.333% - 20px);
+    height: calc(50% - 10px);
   }
 }
