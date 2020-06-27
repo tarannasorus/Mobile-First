@@ -211,6 +211,7 @@ footer ul {
   .col {
     float: left;
     width: calc(50% - 10px);
+    min-height: 400px;
     height: calc(33.333% - 10px);
     margin-bottom: 0;
   }
@@ -255,6 +256,7 @@ footer ul {
 
   .col {
     width: calc(33.333% - 20px);
+    min-height: 375px;
     height: calc(50% - 10px);
   }
 }
